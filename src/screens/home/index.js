@@ -6,6 +6,7 @@ import Header from "../../components/header";
 import Featured from "../../components/featured";
 import Story from "../../components/story";
 import Products from "../../components/products";
+import Testimonial from "../../components/testimonial";
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
                     <Featured />
                     <Story />
                     <Products />
+                    <Testimonial />
                 </main>
             </body>
         </>

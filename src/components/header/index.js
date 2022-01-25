@@ -27,16 +27,16 @@ function Header() {
                 <div className={`nav_menu ${open ? "show-menu" : null}`} id="nav-menu">
                     <ul className="nav_list">
                         <li className="nav_item">
-                            <a href="#home" className="nav_link active-link">Home</a>
+                            <a href="#home" className="nav_link active-link" onClick={Opening}>Home</a>
                         </li>
                         <li className="nav_item">
-                            <a href="#featured" className="nav_link">Featured</a>
+                            <a href="#featured" className="nav_link" onClick={Opening}>Featured</a>
                         </li>
                         <li className="nav_item">
-                            <a href="#products" className="nav_link">Products</a>
+                            <a href="#products" className="nav_link" onClick={Opening}>Products</a>
                         </li>
                         <li className="nav_item">
-                            <a href="#new" className="nav_link">New</a>
+                            <a href="#new" className="nav_link" onClick={Opening}>New</a>
                         </li>
                     </ul>
 

@@ -7,6 +7,7 @@ import Featured from "../../components/featured";
 import Story from "../../components/story";
 import Products from "../../components/products";
 import Testimonial from "../../components/testimonial";
+import New from "../../components/new";
 
 export default function Home() {
 
@@ -21,6 +22,7 @@ export default function Home() {
                     <Story />
                     <Products />
                     <Testimonial />
+                    <New />
                 </main>
             </body>
         </>

@@ -10,13 +10,13 @@ function Header() {
         setOpen(orOpen)
     }
 
-    function scrollHeader(){
+    function scrollHeader() {
         const header = document.getElementById('header')
         // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-        if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+        if (this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
     }
     window.addEventListener('scroll', scrollHeader)
-
+    
     return (
         <header className="header" id="header">
             <nav className="nav container">
@@ -27,7 +27,7 @@ function Header() {
                 <div className={`nav_menu ${open ? "show-menu" : null}`} id="nav-menu">
                     <ul className="nav_list">
                         <li className="nav_item">
-                            <a href="#home" className="nav_link active-link" onClick={Opening}>Home</a>
+                            <a href="#home" className="nav_link" onClick={Opening}>Home</a>
                         </li>
                         <li className="nav_item">
                             <a href="#featured" className="nav_link" onClick={Opening}>Featured</a>

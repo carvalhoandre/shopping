@@ -5,6 +5,7 @@ import Bar from "../../components/bar";
 import Header from "../../components/header";
 import Featured from "../../components/featured";
 import Story from "../../components/story";
+import Products from "../../components/products";
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
                     <Bar />
                     <Featured />
                     <Story />
+                    <Products />
                 </main>
             </body>
         </>

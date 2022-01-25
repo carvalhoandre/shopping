@@ -8,6 +8,7 @@ import Story from "../../components/story";
 import Products from "../../components/products";
 import Testimonial from "../../components/testimonial";
 import New from "../../components/new";
+import NewsLetter from "../../components/newsletter";
 
 export default function Home() {
 
@@ -23,6 +24,7 @@ export default function Home() {
                     <Products />
                     <Testimonial />
                     <New />
+                    <NewsLetter />
                 </main>
             </body>
         </>

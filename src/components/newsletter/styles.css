@@ -1,0 +1,30 @@
+.newsletter_bg {
+    background-color: var(--first-color);
+    padding: 3em 1.5em;
+    text-align: center;
+    row-gap: 2.5em;
+}
+
+.newsletter_title {
+    font-size: var(--h1-font-size);
+    color: hsl(0, 0%, 15%);
+    margin-bottom: var(--mb-1-5);
+}
+
+.newsletter_description {
+    color: hsl(0, 0%, 35%);
+}
+
+.newsletter_subscribe {
+    display: flex;
+    flex-direction: column;
+    row-gap: .75em;
+}
+
+.newsletter_input {
+    border: none;
+    outline: none;
+    background-color: hsl(0, 0%, 94%);
+    padding: 1.25em 1em;
+    color: hsl(0, 0%, 15%);
+}

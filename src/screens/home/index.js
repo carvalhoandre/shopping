@@ -4,6 +4,7 @@ import './styles.css'
 import Bar from "../../components/bar";
 import Header from "../../components/header";
 import Featured from "../../components/featured";
+import Story from "../../components/story";
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
                 <main className="main">
                     <Bar />
                     <Featured />
+                    <Story />
                 </main>
             </body>
         </>

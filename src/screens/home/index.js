@@ -3,6 +3,7 @@ import './styles.css'
 /* components */
 import Bar from "../../components/bar";
 import Header from "../../components/header";
+import Featured from "../../components/featured";
 
 export default function Home() {
 
@@ -13,6 +14,7 @@ export default function Home() {
 
                 <main className="main">
                     <Bar />
+                    <Featured />
                 </main>
             </body>
         </>

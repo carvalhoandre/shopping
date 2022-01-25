@@ -180,7 +180,7 @@ body.dark-theme {
     padding: 6.5rem 0 1rem;
 }
 
-.sectio_title {
+.section_title {
     position: relative;
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-3);
@@ -189,7 +189,7 @@ body.dark-theme {
     text-align: center;
 }
 
-.sectio_title::before {
+.section_title::before {
     content: '';
     position: absolute;
     top: -1rem;

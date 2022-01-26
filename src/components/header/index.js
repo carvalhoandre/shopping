@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import './styles.css'
 
-function Header() {
+function Header({ alterCard }) {
 
     const [open, setOpen] = useState(false)
 
@@ -50,7 +50,7 @@ function Header() {
                     <i className='bx bx-moon change-theme' id="theme-button"></i>
 
                     <div className="nav_shop" id="cart-shop">
-                        <i className='bx bx-shopping-bag' />
+                        <i className='bx bx-shopping-bag' onClick={alterCard} />
                     </div>
 
                     <div className="nav_toggle" id="nav-toggle" onClick={Opening}>

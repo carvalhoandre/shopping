@@ -566,4 +566,8 @@ body.dark-theme {
     .testimonial-swiper {
         width: 25em;
     }
+
+    .cart_container {
+        justify-content: center;
+    }
 }

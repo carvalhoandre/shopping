@@ -6,7 +6,12 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 // import Swiper core and required modules
 import SwiperCore, {
-    Pagination
+    Autoplay,
+    Keyboard,
+    Mousewheel,
+    Navigation,
+    Pagination,
+
 } from 'swiper/core';
 //images
 import Image from '../../assets/images/testimonial.png'
@@ -14,26 +19,26 @@ import ImageOne from '../../assets/images/testimonial1.jpg'
 import ImageTwo from '../../assets/images/testimonial2.jpg'
 import ImageThree from '../../assets/images/testimonial3.jpg'
 // install Swiper modules
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Navigation, Mousewheel, Keyboard, Autoplay]);
 
 export default function Testimonial() {
 
     return (
-        <section className='testimonial section container'>
-            <div className='testimonial_container grid'>
-                <div className='swiper testimonial-swiper'>
+        <section className="testimonial section container">
+            <div className="testimonial_container grid">
+                <div className="swiper testimonial-swiper">
                     <Swiper
                         navigation={true}
                         pagination={{ "dynamicBullets": true }}
                         className="swiper-wrapper"
                         autoplay={{
-                            delay: 100,
+                            delay: 7000,
                         }}
-                        mousewheel={true}
+
                         keyboard={true}
                     >
-                        <SwiperSlide className='testimonial_card swiper-slide'>
-                            <div class="testimonial_quote">
+                        <SwiperSlide className="testimonial_card swiper-slide">
+                            <div className="testimonial_quote">
                                 <i className='bx bxs-quote-alt-left' />
                             </div>
                             <p className="testimonial_description">
@@ -43,8 +48,8 @@ export default function Testimonial() {
                             </p>
                             <h3 className="testimonial_date">March 27. 2021</h3>
 
-                            <div className="testimonial_perfil">
-                                <img src={ImageOne} alt="Image_ilustrativa" className="testimonial_perfil-img" />
+                            <div class="testimonial_perfil">
+                                <img src={ImageOne} alt="" className="testimonial_perfil-img" />
 
                                 <div className="testimonial_perfil-data">
                                     <span className="testimonial_perfil-name">Lee Doe</span>
@@ -65,7 +70,7 @@ export default function Testimonial() {
                             <h3 className="testimonial_date">March 27. 2021</h3>
 
                             <div className="testimonial_perfil">
-                                <img src={ImageTwo} alt="Image_ilustrativa" className="testimonial_perfil-img" />
+                                <img src={ImageTwo} alt="" className="testimonial_perfil-img" />
 
                                 <div className="testimonial_perfil-data">
                                     <span className="testimonial_perfil-name">Samantha Mey</span>
@@ -86,7 +91,7 @@ export default function Testimonial() {
                             <h3 className="testimonial_date">March 27. 2021</h3>
 
                             <div className="testimonial_perfil">
-                                <img src={ImageThree} alt="Image_ilustrativa" className="testimonial_perfil-img" />
+                                <img src={ImageThree} alt="" className="testimonial_perfil-img" />
 
                                 <div className="testimonial_perfil-data">
                                     <span className="testimonial_perfil-name">Raul Zaman</span>
@@ -97,10 +102,10 @@ export default function Testimonial() {
                     </Swiper>
                 </div>
 
-            </div>
-            <div class="testimonial_images">
-                <div class="testimonial_square" />
-                <img src={Image} alt="Image_ilustrativa" class="testimonial_img" />
+                <div className="testimonial_images">
+                    <div className="testimonial_square"> </div>
+                    <img src={Image} alt="" className="testimonial_img" />
+                </div>
             </div>
         </section>
     )

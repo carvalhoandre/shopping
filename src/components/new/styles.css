@@ -6,6 +6,7 @@
     border: 1px solid var(--border-color);
     overflow-y: hidden;
     transition: .3s;
+
   }
   
   .new_tag {
@@ -20,7 +21,7 @@
     right: 1rem;
     transition: .3s;
   }
-  
+
   .new_img {
     height: 215px;
     margin-bottom: var(--mb-1);

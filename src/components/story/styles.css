@@ -1,5 +1,5 @@
 .story_container {
-    row-gap: 7.5em;
+    row-gap: 7.5rem;
 }
 
 .story_title {
@@ -27,6 +27,6 @@
 
 .story_img {
     position: absolute;
-    left: 3em;
-    top: -3em;
+    left: 3rem;
+    top: -3rem;
 }

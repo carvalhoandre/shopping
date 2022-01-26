@@ -11,10 +11,14 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 // import Swiper core and required modules
 import SwiperCore, {
+    Autoplay,
+    Keyboard,
+    Mousewheel,
+    Navigation,
     Pagination
 } from 'swiper/core';
 // install Swiper modules
-SwiperCore.use([Pagination]);
+SwiperCore.use([ Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
 
 export default function New() {
     return (
@@ -26,14 +30,15 @@ export default function New() {
             <div className='new_ontainer'>
                 <div className="swiper new-swiper">
                     <Swiper
+                        cssMode={true}
                         navigation={true}
-                        pagination={{ "dynamicBullets": true }}
-                        className="swiper-wrapper"
-                        autoplay={{
-                            delay: 1000,
-                        }}
+                        pagination={true }
                         mousewheel={true}
                         keyboard={true}
+                        className="swiper-wrapper"
+                        autoplay={{
+                            delay: 7000,
+                        }}
                     >
                         <SwiperSlide className="new_card swiper-slide">
                             <span className="new_tag">New</span>

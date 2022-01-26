@@ -17,14 +17,13 @@ import SwiperCore, {
 SwiperCore.use([Pagination]);
 
 export default function New() {
-
     return (
         <section className='new section container' id="new">
             <h2 className='section_title'>
                 New Arrivals
             </h2>
 
-            <div className='new__ontainer'>
+            <div className='new_ontainer'>
                 <div className="swiper new-swiper">
                     <Swiper
                         navigation={true}
@@ -36,56 +35,56 @@ export default function New() {
                         mousewheel={true}
                         keyboard={true}
                     >
-                        <SwiperSlide className="new__card swiper-slide">
-                            <span className="new__tag">New</span>
+                        <SwiperSlide className="new_card swiper-slide">
+                            <span className="new_tag">New</span>
 
-                            <img src={Image} alt="Imagem_Ilustrativa" className="new__img" />
+                            <img src={Image} alt="Imagem_Ilustrativa" className="new_img" />
 
-                            <div className="new__data">
-                                <h3 className="new__title">Longines rose</h3>
-                                <span className="new__price">$980</span>
+                            <div className="new_data">
+                                <h3 className="new_title">Longines rose</h3>
+                                <span className="new_price">$980</span>
                             </div>
 
-                            <button className="button new__button">ADD TO CART</button>
+                            <button className="button new_button">ADD TO CART</button>
                         </SwiperSlide>
 
-                        <SwiperSlide className="new__card swiper-slide">
-                            <span className="new__tag">New</span>
+                        <SwiperSlide className="new_card swiper-slide">
+                            <span className="new_tag">New</span>
 
-                            <img src={ImageTwo} alt="Imagem_Ilustrativa" className="new__img" />
+                            <img src={ImageTwo} alt="Imagem_Ilustrativa" className="new_img" />
 
-                            <div className="new__data">
-                                <h3 className="new__title">Jazzmaster</h3>
-                                <span className="new__price">$1150</span>
+                            <div className="new_data">
+                                <h3 className="new_title">Jazzmaster</h3>
+                                <span className="new_price">$1150</span>
                             </div>
 
-                            <button className="button new__button">ADD TO CART</button>
+                            <button className="button new_button">ADD TO CART</button>
                         </SwiperSlide>
 
-                        <SwiperSlide className="new__card swiper-slide">
-                            <span className="new__tag">New</span>
+                        <SwiperSlide className="new_card swiper-slide">
+                            <span className="new_tag">New</span>
 
-                            <img src={ImageThree} alt="Imagem_Ilustrativa" className="new__img" />
+                            <img src={ImageThree} alt="Imagem_Ilustrativa" className="new_img" />
 
-                            <div className="new__data">
-                                <h3 className="new__title">Dreyfuss gold</h3>
-                                <span className="new__price">$750</span>
+                            <div className="new_data">
+                                <h3 className="new_title">Dreyfuss gold</h3>
+                                <span className="new_price">$750</span>
                             </div>
 
-                            <button className="button new__button">ADD TO CART</button>
+                            <button className="button new_button">ADD TO CART</button>
                         </SwiperSlide>
 
-                        <SwiperSlide className="new__card swiper-slide">
-                            <span className="new__tag">New</span>
+                        <SwiperSlide className="new_card swiper-slide">
+                            <span className="new_tag">New</span>
 
-                            <img src={ImageFor} alt="Imagem_Ilustrativa" className="new__img" />
+                            <img src={ImageFor} alt="Imagem_Ilustrativa" className="new_img" />
 
-                            <div className="new__data">
-                                <h3 className="new__title">Portuguese rose</h3>
-                                <span className="new__price">$1590</span>
+                            <div className="new_data">
+                                <h3 className="new_title">Portuguese rose</h3>
+                                <span className="new_price">$1590</span>
                             </div>
 
-                            <button className="button new__button">ADD TO CART</button>
+                            <button className="button new_button">ADD TO CART</button>
                         </SwiperSlide>
                     </Swiper>
                 </div>

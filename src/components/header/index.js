@@ -1,9 +1,12 @@
 import React, { useState } from "react"
+import { getTheme, setTheme } from '../../service/theme'
 import './styles.css'
 
 function Header({ alterCard }) {
 
     const [open, setOpen] = useState(false)
+
+    const [theme] = useState(getTheme())
 
     const Opening = () => {
         let orOpen = !open
@@ -16,7 +19,7 @@ function Header({ alterCard }) {
         if (this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
     }
     window.addEventListener('scroll', scrollHeader)
-    
+
     return (
         <header className="header" id="header">
             <nav className="nav container">
@@ -46,8 +49,12 @@ function Header({ alterCard }) {
                 </div>
 
                 <div className="nav_btns">
-
-                    <i className='bx bx-moon change-theme' id="theme-button"></i>
+                    <i className={`bx ${theme === 'light' ? 'bx-moon' : 'bxs-sun'} change-theme`} id="theme-button"
+                        onClick={(() => {
+                            theme === 'dark' ? setTheme('light') : setTheme('dark')
+                            window.location.reload();
+                        })}
+                    />
 
                     <div className="nav_shop" id="cart-shop">
                         <i className='bx bx-shopping-bag' onClick={alterCard} />

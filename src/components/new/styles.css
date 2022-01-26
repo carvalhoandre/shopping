@@ -1,4 +1,4 @@
-.new__card {
+.new_card {
     position: relative;
     text-align: center;
     background-color: var(--container-color);
@@ -8,7 +8,7 @@
     transition: .3s;
   }
   
-  .new__tag {
+  .new_tag {
     background-color: var(--first-color);
     padding: .5rem 1rem;
     color: #fff;
@@ -21,54 +21,54 @@
     transition: .3s;
   }
   
-  .new__img {
+  .new_img {
     height: 215px;
     margin-bottom: var(--mb-1);
   }
   
-  .new__title, 
-  .new__price {
+  .new_title, 
+  .new_price {
     font-size: var(--h3-font-size);
     font-weight: var(--font-bold);
   }
   
-  .new__title {
+  .new_title {
     text-transform: uppercase;
     margin-bottom: var(--mb-0-75);
   }
   
-  .new__price {
+  .new_price {
     display: block;
     color: var(--first-color);
     transition: .3s;
   }
   
-  .new__button {
+  .new_button {
     font-size: var(--small-font-size);
     transform: translateY(1rem);
     opacity: 0;
   }
   
-  .new__card:hover {
+  .new_card:hover {
     background-color: var(--first-color);
     box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
     padding: 2rem 0 3rem 0;
   }
   
-  .new__card:hover .new__tag {
+  .new_card:hover .new_tag {
     background-color: var(--button-color);
   }
   
-  .new__card:hover .new__button {
+  .new_card:hover .new_button {
     transform: translateY(0);
     opacity: 1;
   }
   
-  .new__card:hover .new__title {
+  .new_card:hover .new_title {
     color: hsl(0, 0%, 15%);
   }
   
-  .new__card:hover .new__price {
+  .new_card:hover .new_price {
     color: hsl(0, 0%, 15%);
     margin-bottom: var(--mb-1-5);
   }

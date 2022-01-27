@@ -23,7 +23,7 @@ function Header({ alterCard }) {
     return (
         <header className="header" id="header">
             <nav className="nav container">
-                <a href="#" className="nav_logo">
+                <a href="home" className="nav_logo">
                     <i className='bx bxs-watch nav_logo-icon' /> Rolex
                 </a>
 

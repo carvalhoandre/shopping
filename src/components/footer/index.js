@@ -22,22 +22,22 @@ export default function Footer() {
 
                     <ul className='footer_links'>
                         <li>
-                            <a href="#" className='footer_link'>
+                            <a href="home" className='footer_link'>
                                 Support Center
                             </a>
                         </li>
                         <li>
-                            <a href="#" className='footer_link'>
+                            <a href="home" className='footer_link'>
                                 Customer Support
                             </a>
                         </li>
                         <li>
-                            <a href="#" className='footer_link'>
+                            <a href="home" className='footer_link'>
                                 About Us
                             </a>
                         </li>
                         <li>
-                            <a href="#" className='footer_link'>
+                            <a href="home" className='footer_link'>
                                 Copy Rigth
                             </a>
                         </li>
@@ -49,22 +49,22 @@ export default function Footer() {
 
                     <ul className='footer_links'>
                         <li>
-                            <a href="#" className='footer_link'>
+                            <a href="home" className='footer_link'>
                                 Mountain bikes
                             </a>
                         </li>
                         <li>
-                            <a href="#" className='footer_link'>
-                                Eletric
+                            <a href="home" className='footer_link'>
+                                Eletrihome
                             </a>
                         </li>
                         <li>
-                            <a href="#" className='footer_link'>
+                            <a href="home" className='footer_link'>
                                 Road Bikes
                             </a>
                         </li>
                         <li>
-                            <a href="#" className='footer_link'>
+                            <a href="home" className='footer_link'>
                                 Accesories
                             </a>
                         </li>
@@ -75,13 +75,13 @@ export default function Footer() {
                     <h3 className='footer_title'>Social</h3>
 
                     <ul className='footer_social'>
-                        <a href="#" className='footer_social-link'>
+                        <a href="home" className='footer_social-link'>
                             <i className='bx bxl-facebook' />
                         </a>
-                        <a href="#" className='footer_social-link'>
+                        <a href="home" className='footer_social-link'>
                             <i className='bx bxl-instagram' />
                         </a>
-                        <a href="#" className='footer_social-link'>
+                        <a href="home" className='footer_social-link'>
                             <i className='bx bxl-youtube' />
                         </a>
                     </ul>

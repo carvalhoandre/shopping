@@ -51,7 +51,7 @@ export default function Home() {
 
                 <Footer />
 
-                <a href="#" className="scrollup" id="scroll-up">
+                <a href="home" className="scrollup" id="scroll-up">
                     <i className='bx bx-up-arrow-alt scrollup_icon' />
                 </a>
             </body>

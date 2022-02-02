@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import '../../styles/login.css'
-/* import { login, sucessLogin } from "../../services/api"; */
-//import { setLocalUser } from '../../services/auth'
+import { login } from "../../service/api/auth";
 import * as yup from 'yup'
 import { setLocale } from 'yup';
 import { ErrorMessage, Formik, Form, Field } from 'formik'
@@ -10,6 +9,8 @@ import { toast } from 'react-toastify';
 import PacmanLoader from "react-spinners/PacmanLoader";
 import Header from "../../components/header";
 import Image from '../../assets/ilustations/security.svg'
+//theme
+import { getTheme } from '../../service/theme'
 
 setLocale({
     mixed: {
@@ -22,27 +23,22 @@ setLocale({
 });
 
 export default function SignIn() {
-    //const history = useHref();
+    const history = useHref();
 
-    const [loading] = useState(false);
+    const [loading, setLoading] = useState(false);
+
+    const [theme] = useState(getTheme())
+
+    const lenWith = window.screen.width
 
     const handleSubimit = data => {
-        console.log(data)
-        toast.error('test', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-        });
-        /* login(data)
+        setLoading(true)
+        login(data)
             .then((response) => {
-                sucessLogin(response.headers.authorization);
+                console.log(response)
                 setLoading(false)
                 history.push("/");
-            }, 
+            },
                 error => {
                     setLoading(false)
                     toast.error('E-mail ou senha incorretos!', {
@@ -54,7 +50,7 @@ export default function SignIn() {
                         draggable: true,
                         progress: undefined,
                     });
-                }) */
+                })
     }
 
     const validations = yup.object().shape({
@@ -70,7 +66,7 @@ export default function SignIn() {
                         <PacmanLoader size={50} color={'#00C4C7'} loading={loading} />
                     </div>
                 ) : (
-                    <>
+                    <body className={`${theme === 'light' ? '' : 'dark-theme'}`}>
                         <Header />
                         <div className="login-content">
                             <div className="login-form-container">
@@ -141,14 +137,17 @@ export default function SignIn() {
                                     </ul>
                                 </li>
                             </div>
-                            <div className="ilustration">
-                                <img src={Image} alt="Ilustração" className="login-img" />
-                                <span className='login_copy'>
-                                    &#169; André Carvalho. All rigths reserved
-                                </span>
-                            </div>
+                            {lenWith > 768 ?
+                                <div className="ilustration">
+                                    <img src={Image} alt="Ilustração" className="login-img" />
+                                    <span className='login_copy'>
+                                        &#169; André Carvalho. All rigths reserved
+                                    </span>
+                                </div>
+                                :
+                                null}
                         </div>
-                    </>
+                    </body>
                 )}
             </div>
         </>

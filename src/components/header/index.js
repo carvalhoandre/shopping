@@ -63,6 +63,12 @@ function Header({ alterCard }) {
                     <div className="nav_toggle" id="nav-toggle" onClick={Opening}>
                         <i className='bx bx-grid-alt' />
                     </div>
+
+                    <div>
+                        <button className='header_button'>
+                            <a className="nav_link-login" href="login">Login</a>
+                        </button>
+                    </div>
                 </div>
             </nav>
         </header>

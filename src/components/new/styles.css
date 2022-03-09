@@ -69,8 +69,8 @@
     color: hsl(0, 0%, 15%);
   }
   
-  .new_card:hover .new_price {
-    color: hsl(0, 0%, 15%);
+  .new_card:hover .new_price,  .new_card:hover .new_title{
+    color: #FFF;
     margin-bottom: var(--mb-1-5);
   }
   

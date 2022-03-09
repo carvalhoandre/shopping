@@ -20,7 +20,7 @@ export default function Story() {
                         presentations in this store, discover them now.
                     </p>
 
-                    <a href="#" className="button button--small">Discover</a>
+                    <a href="home" className="button button--small">Discover</a>
                 </div>
 
                 <div className="story_images">

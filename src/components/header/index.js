@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import { getTheme, setTheme } from '../../service/theme'
+import LogoWhite from '../../assets/logoWhite.svg'
+import LogoBlack from '../../assets/logoBlack.svg'
 import './styles.css'
 
 function Header({ alterCard }) {
@@ -23,8 +25,13 @@ function Header({ alterCard }) {
     return (
         <header className="header" id="header">
             <nav className="nav container">
-                <a href="#" className="nav_logo">
-                    <i className='bx bxs-watch nav_logo-icon' /> Rolex
+                <a href="home" className="nav_logo">
+                    {theme !== 'light' ?
+                        <a href="/" className="nav_logo"><img src={LogoWhite} alt="logo" className="logo-ac" /></a>
+                        :
+                        <a href="/" className="nav_logo"><img src={LogoBlack} alt="logo" className="logo-ac" /></a>
+                    }
+                    AC STORE
                 </a>
 
                 <div className={`nav_menu ${open ? "show-menu" : null}`} id="nav-menu">
@@ -62,6 +69,12 @@ function Header({ alterCard }) {
 
                     <div className="nav_toggle" id="nav-toggle" onClick={Opening}>
                         <i className='bx bx-grid-alt' />
+                    </div>
+
+                    <div>
+                        <button className='header_button'>
+                            <a className="nav_link-login" href="login">Login</a>
+                        </button>
                     </div>
                 </div>
             </nav>

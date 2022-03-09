@@ -1,21 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 
 :root {
     --header-height: 3.5rem;
     /*========== Colors ==========*/
-    --first-color: hsl(31, 100%, 70%);
+    --first-color: hsl(181, 100%, 39%);
     --button-color: hsl(0, 0%, 17%);
     --button-color-alt: hsl(0, 0%, 21%);
-    --title-color: hsl(0, 0%, 15%);
-    --text-color: hsl(0, 0%, 35%);
+    --title-color: hsl(222, 10%, 25%);
+    --text-color: hsl(218, 15%, 48%);
     --text-color-light: hsl(0, 0%, 55%);
     --body-color: hsl(0, 0%, 99%);
     --container-color: #fff;
     --border-color: hsl(0, 0%, 94%);
     /*========== Font and typography ==========*/
-    --body-font: 'Roboto', sans-serif;
+    --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -50,7 +51,6 @@
         --smaller-font-size: .813rem;
     }
 }
-
 
 /*=============== BASE ===============*/
 
@@ -112,7 +112,7 @@ button {
 /*========== Variables Dark theme ==========*/
 
 body.dark-theme {
-    --first-color: hsl(31, 76%, 74%);
+    --first-color: hsl(181, 76%, 42%);
     --button-color: hsl(0, 0%, 24%);
     --button-color-alt: hsl(0, 0%, 28%);
     --title-color: hsl(0, 0%, 95%);
@@ -338,8 +338,7 @@ body.dark-theme {
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
-
-
+    
     .home_img-bg {
         width: 340px;
     }
@@ -370,6 +369,11 @@ body.dark-theme {
         height: calc(var(--header-height) + 1.5rem);
         justify-content: initial;
         column-gap: 3rem;
+    }
+
+    .logo-ac{
+        max-width: 35px;
+        max-height: 35px;
     }
 
     .nav_toggle,

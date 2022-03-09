@@ -14,20 +14,6 @@ export default function Products() {
             </h2>
 
             <div className='products_container grid'>
-                <article className='products_card'>
-                    <img src={Image} alt="Imagem_Ilustrativa" className='products_img' />
-
-                    <h3 className='products_title'>
-
-                    </h3>
-                    <span className='products_price'>
-
-                    </span>
-
-                    <button className='products_button'>
-                        <i className='bx bx-shopping-bag' />
-                    </button>
-                </article>
                 
                 <article className='products_card'>
                     <img src={Image} alt="Imagem_Ilustrativa" className='products_img' />
